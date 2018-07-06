@@ -13,7 +13,8 @@ class Shoe
     brand = unique_brand
     @brand = brand
     if BRANDS.include?(brand)
-      BRANDS << brand #if brand isn't already there#
+      false 
+    else BRANDS << brand #if brand isn't already there#
     end
   end
   
