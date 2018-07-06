@@ -1,16 +1,21 @@
 class Book
-  attr_accessor :author, :page_count
-  attr_reader :title
-  attr_reader :genre
   
-  GENRES = ["Thriller", "Science Fiction", "Romance"]
-
+  attr_accessor :title, :author, :page_count
+  
   def initialize(title)
     @title = title
   end
-
-  def turn_page
-    puts "Flipping the page...wow, you read fast!"
+  
+  def title
+    @title
   end
-
+  
+  def title=(new_title)
+    title = new_title
+    @title = title
+  end
+  
+  def turn_page
+    puts "Flipping"
+  end
 end
