@@ -1,4 +1,3 @@
 class Shoe
   
 end
-end
